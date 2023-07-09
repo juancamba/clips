@@ -1,4 +1,6 @@
 # clips examples
+Esto pretende ser un repositorio de codigo de la asignatura **Ingeniería y Gestión del Conocimiento** del cuarto curso del grado de Ingeniería en tecnología de la información de la UNED
+
 Tratamos de implementar los ejercicios que nos dió el equipo docente de la UNED, ya que la mayoria no funciona
 
 We try to implement the exercises that the UNED teaching team gave us, since most of them do not work
