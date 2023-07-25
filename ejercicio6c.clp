@@ -15,8 +15,8 @@
 (defrule apto-credito
     (cliente (nombre ?n)(tarjeta ?t)(saldo ?s))
     ;(or (> ?s 100) (?t visa_oro))
-    (or (test (> ?s 100))
-        (test (eq ?t visa_oro))
+    (or (test (> ?s 100))        (test (eq ?t visa_oro)))
+
     =>
     (printout t "cliente apto para credito: "?n ?t ?s crlf)
 )

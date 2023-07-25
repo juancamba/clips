@@ -65,3 +65,26 @@ Construye una regla para cada tipo de nota, son todas iguales pero cambia la com
 Define una plantilla para almacenar fechas y escribe las regla que comprueben si la fecha no es válida. (Nota: un año es bisiesto si es múltiplo de 4 pero no de 100, salvo cuando sea múltiplo de 400, en cuyo caso sí que es bisiesto.)
 
 Hace cuatro reglas para comprobar los meses con 28,29,30 y 31 dias. Además genera otra para la fecha invalida
+
+
+## Ejercicio 16
+Ej-16. Dado un mapa que representa la situación de distintas ciudades, se quiere construir un sistema en Clips que permita contestar preguntas sobre la posición relativa de dos ciudades, con las siguientes características:
+
+a) Se introducirán exclusivamente hechos correspondientes a las relaciones “estar al norte de” y “estar al oeste de” y sólo
+entre las ciudades más próximas entre sí. Por ejemplo, si suponemos 9 ciudades distribuidas en una cuadrícula:
+```
+A B C
+D E F
+G H I
+```
+sólo se establecerán como hechos: “A está al norte de D”, “A está al oeste de B”, etc.
+
+b) El sistema de representación será capaz de inferir todas las relaciones inversas de las dadas directamente, es decir, lasrelaciones “estar al sur de” y “estar al este de”.
+
+c) Se inferirán nuevas relaciones por transitividad. Por ejemplo, sabiendo que “A está al norte de D” y que “D está al norte de G” se inferirá que “A está al norte de G”.
+
+d) Se inferirán las relaciones noroeste, noreste, suroeste y sureste a partir de los hechos iniciales. Por ejemplo, se podrá inferir que “C está al noreste de G”.
+
+e) El hecho que se utilizará para consultar al sistema será ( situación <ciudad_1> <ciudad_2> ). Cuando este hecho se inserta en el sistema, el mismo debe responder mostrando por pantalla la  situación de la ciudad 1 con respecto a la ciudad 2.
+
+
