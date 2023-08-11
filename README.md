@@ -9,7 +9,7 @@ We try to implement the exercises that the UNED teaching team gave us, since mos
 
 Comands
 ```
-(load "D:\\repo\\file.clp")
+(load "D:\\Juan\\UNED\\2022 - 2023\\Ingenieria y gestion conocimiento\\clips_codigo\\clips\\ejercicio21.clp")
 (reset) to initialize rules and facts
 (clear) to reset system
 (run) to run the fact in the agenda
