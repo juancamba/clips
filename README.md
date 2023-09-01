@@ -10,6 +10,8 @@ We try to implement the exercises that the UNED teaching team gave us, since mos
 Comands
 ```
 (load "D:\\Juan\\UNED\\2022 - 2023\\Ingenieria y gestion conocimiento\\clips_codigo\\clips\\ejercicio21.clp")
+(load "D:\\Juan\\UNED\\2022 - 2023\\Ingenieria y gestion conocimiento\\clips_codigo\\clips\\examen22f1b.clp")
+
 (reset) to initialize rules and facts
 (clear) to reset system
 (run) to run the fact in the agenda
@@ -88,3 +90,35 @@ d) Se inferirán las relaciones noroeste, noreste, suroeste y sureste a partir d
 e) El hecho que se utilizará para consultar al sistema será ( situación <ciudad_1> <ciudad_2> ). Cuando este hecho se inserta en el sistema, el mismo debe responder mostrando por pantalla la  situación de la ciudad 1 con respecto a la ciudad 2.
 
 
+## Ejercicio 21
+Ej-21. Supóngase una agencia de viajes que ofrece viajes de trenes a sus clientes. Los viajes tienen unos atributos como son: el
+lugar de origen y el lugar de destino y una tarifa inicial que se utilizará para calcular el precio final del viaje. 
+
+Los viajes en tren se caracterizan por: 
+
+	* el tipo de tren (AVE o TALGO)
+	* por la clase (turista o preferente)
+	* por el período de salida (blanco, rojo o azul) 
+	* tipo de cliente (asiduo o esporádico).
+
+Sin descuentos ni incrementos, los precios de un viaje en clase turista, entre dos ciudades, son los siguientes y dependen del tipo
+de tren.
+
+ORIGEN DESTINO AVE TALGO
+* Madrid Córdoba 70 60
+* Madrid Sevilla 80 70
+* Barcelona Madrid --- 80
+
+El precio sería el mismo para el viaje Barcelona-Madrid que para el viaje Madrid-Barcelona.
+Se utilizan las siguientes reglas para calcular el precio final:
+* Si el viaje es en clase preferente, los precios de la tabla se ven incrementados en un 30%
+* Si la fecha de salida es azul, el precio del billete se reduce en un 10% y si es roja se incrementa en un 10%.
+* Si el cliente es asiduo, el precio se reduce en un 10%
+* Si el viajero es menor de 22 años (tarifa joven), se le aplica un 20% de reducción.
+* Si el viajero es mayor de 65 años (tarifa dorada), se le aplica un 50% de reducción.
+* Los descuentos y suplementos se aplican en el orden establecido en el enunciado.
+
+## Ejercicio 21b
+Es una versión simplificada del anterior
+
+Creamos los hechos por los incrementos o decrementos son si viaja en preferente que le incrementa un 0.3
